@@ -43,8 +43,8 @@ namespace ThreeHeartDancePartner
                 return;
 
             // replace with accept dialog
-            // The original stuff, only the relationship point check is modified. (1000 -> 750)
-            if (!npc.HasPartnerForDance && Game1.player.getFriendshipLevelForNPC(npc.Name) >= 750)
+            // The original stuff, only the relationship point check is modified. (1000 -> 500 (500 is 2 hearts))
+            if (!npc.HasPartnerForDance && Game1.player.getFriendshipLevelForNPC(npc.Name) >= 500)
             {
                 string s = "";
                 switch (npc.Gender)
